@@ -97,7 +97,9 @@ FOREIGN KEY (ID_PROF) REFERENCES PROFESOR (ID_PROF);
 
 -- Inscripciones aprobadas
 
-CREATE VIEW vw_inscrp_aprob AS SELECT * FROM utn_proyecto.inscripcion WHERE ESTADO = "C";
+CREATE VIEW vw_inscrp_aprob AS  
+    SELECT * FROM utn_proyecto.inscripcion WHERE ESTADO = "C"
+;
 
 SELECT * FROM vw_inscrp_aprob;
 
