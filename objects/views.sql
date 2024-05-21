@@ -9,7 +9,6 @@ CREATE VIEW vw_inscrp_aprob AS
     SELECT * FROM utn_proyecto.INSCRIPCION WHERE ESTADO = "C"
 ;
 
-SELECT * FROM vw_inscrp_aprob;
 
 -- Cantidad de estudiantes por curso
 
@@ -20,15 +19,11 @@ SELECT
 FROM INSCRIPCION I
 JOIN CURSO C ON I.ID_CURSO = C.ID_CURSO
 GROUP BY C.NOMBRE_CUR;
-
-
-SELECT * FROM vw_est_cur;
-
+USE utn_proyecto ;
 -- Lista de Aprobados
 
 CREATE OR REPLACE VIEW vw_est_aprob AS SELECT ID_ESTUDIANTE,ID_CURSO,NOTA FROM utn_proyecto.NOTA WHERE NOTA > 6;
 
-SELECT * FROM vw_est_aprob;
 
 -- Cantidad de Inscriptos por fecha (inicio de cuatrimestre)
 
@@ -40,7 +35,6 @@ FROM INSCRIPCION
 GROUP BY FECHA_INS
 ORDER BY FECHA_INS DESC;
 
-SELECT * FROM vw_ins_fecha;
 
 -- Top 5 de los estudiantes con mejor promedio
 
@@ -54,5 +48,3 @@ JOIN NOTA N ON E.ID_ESTUDIANTE = N.ID_ESTUDIANTE
 GROUP BY E.ID_ESTUDIANTE
 ORDER BY Promedio DESC
 LIMIT 5;
-
-SELECT * FROM vw_top_est;
