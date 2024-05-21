@@ -48,3 +48,8 @@ BEGIN
 END //
 
 DELIMITER ;
+
+-- Uso de Functions
+
+SELECT calcular_promedio_nota(1);
+SELECT calcular_proporcion_aprobados(70);

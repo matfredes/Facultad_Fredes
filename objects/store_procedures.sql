@@ -37,3 +37,8 @@ BEGIN
 END //
 
 delimiter ;
+
+-- Uso de Stored Procedures
+
+CALL registrar_inscripcion(1,2);
+CALL actualizar_informacion_estudiante(1,"Matias","Fredes","1200Yerbal","matfredes@gmail.com","1145662315");

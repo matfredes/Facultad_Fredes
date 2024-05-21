@@ -48,3 +48,11 @@ JOIN NOTA N ON E.ID_ESTUDIANTE = N.ID_ESTUDIANTE
 GROUP BY E.ID_ESTUDIANTE
 ORDER BY Promedio DESC
 LIMIT 5;
+
+-- Uso de Views
+
+SELECT * FROM vw_inscrp_aprob;
+SELECT * FROM vw_est_cur;
+SELECT * FROM vw_est_aprob;
+SELECT * FROM vw_ins_fecha;
+SELECT * FROM vw_top_est;
