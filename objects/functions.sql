@@ -1,5 +1,5 @@
 USE utn_proyecto ;
-/* FUNCIONES */
+-- FUNCIONES 
 
 -- Funcion para calcular el promedio de notas de un estudiante ingresado 
 
