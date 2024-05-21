@@ -1,5 +1,5 @@
 USE utn_proyecto;
-/* PROCEDURES */
+-- PROCEDURES 
 
 -- Procedimiento para inscribir un estudiante a un curso (asistido por trigger para evitar repeticiones)
 
