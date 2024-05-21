@@ -1,24 +1,23 @@
-USE utn_proyecto ;
+USE utn_proyecto;
 /* PROCEDURES */
 
 -- Procedimiento para inscribir un estudiante a un curso (asistido por trigger para evitar repeticiones)
 
-DELIMITER //
+delimiter //
 CREATE PROCEDURE registrar_inscripcion(
-    IN estudiante_id INT,
-    IN curso_id INT
-)
+    IN estudiante_id INT
+   ,IN curso_id INT)
 BEGIN
     INSERT INTO INSCRIPCION (ID_ESTUDIANTE, ID_CURSO, FECHA_INS, ESTADO)
     VALUES (estudiante_id, curso_id, CURDATE(), 'P');
 END //
 
-DELIMITER ;
+delimiter ;
 
 
 -- Procedimiento para actualizar la información personal de un estudiante en la tabla "estudiante"
 
-DELIMITER //
+delimiter //
 CREATE PROCEDURE actualizar_informacion_estudiante(
     IN estudiante_id INT,
     IN nuevo_nombre VARCHAR(100),
@@ -37,4 +36,4 @@ BEGIN
     WHERE ID_ESTUDIANTE = estudiante_id;
 END //
 
-DELIMITER ;
+delimiter ;
