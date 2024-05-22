@@ -21,9 +21,9 @@ GRANT SELECT ON utn_proyecto.* TO directivos_facultad;
 GRANT INSERT, UPDATE, DELETE ON utn_proyecto.* TO desarrollador_asistente;
 
 -- CREACION USUARIOS Y CONTRASEÑAS
-CREATE USER 'reader1'@'%' IDENTIFIED BY 'user1';
-CREATE USER 'reader2'@'%' IDENTIFIED BY 'user2';
-CREATE USER 'reader3'@'%' IDENTIFIED BY 'user3';
+CREATE USER 'reader_1'@'%' IDENTIFIED BY 'user1';
+CREATE USER 'reader_2'@'%' IDENTIFIED BY 'user2';
+CREATE USER 'reader_3'@'%' IDENTIFIED BY 'user3';
 CREATE USER 'dev'@'%' IDENTIFIED BY 'user4';
 CREATE USER 'dev_jr'@'%' IDENTIFIED BY 'user5';
 
