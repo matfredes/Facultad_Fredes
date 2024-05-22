@@ -13,12 +13,12 @@ DROP USER IF EXISTS 'dev_jr'@'%';
 
 
 -- CREACIÓN NOMBRES ROLES
-CREATE ROLE 'desarrollador_servicio', 'desarrollador_asistente', 'directivos_facultad';
+CREATE ROLE desarrollador_servicio, desarrollador_asistente, directivos_facultad;
 
 -- ACCESOS DE ROLES
-GRANT ALL ON utn_proyecto.* TO 'desarrollador_feria';
-GRANT SELECT ON utn_proyecto.* TO 'gerencia_feria';
-GRANT INSERT, UPDATE, DELETE ON utn_proyecto.* TO 'desarrolladorjr_feria';
+GRANT ALL PRIVILEGES ON utn_proyecto.* TO desarrollador_feria;
+GRANT SELECT ON utn_proyecto.* TO gerencia_feria;
+GRANT INSERT, UPDATE, DELETE ON utn_proyecto.* TO desarrolladorjr_feria;
 
 -- CREACION USUARIOS Y CONTRASEÑAS
 CREATE USER 'reader1'@'%' IDENTIFIED BY 'user1';
@@ -28,6 +28,6 @@ CREATE USER 'dev'@'%' IDENTIFIED BY 'user4';
 CREATE USER 'dev_jr'@'%' IDENTIFIED BY 'user5';
 
 -- ASIGNACION DE ROLES
-GRANT 'desarrollador_servicio' TO 'dev'@'%';
-GRANT 'desarrollador_asistente' TO 'reader1'@'%', 'reader2'@'%', 'reader3'@'%';
-GRANT 'directivos_facultad', 'desarrollador_asistente' TO 'dev_jr'@'%';
+GRANT desarrollador_servicio TO 'dev'@'%';
+GRANT desarrollador_asistente TO 'reader1'@'%', 'reader2'@'%', 'reader3'@'%';
+GRANT directivos_facultad, desarrollador_asistente TO 'dev_jr'@'%';
