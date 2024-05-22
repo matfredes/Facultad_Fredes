@@ -69,6 +69,56 @@ El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN
 | CORREO_EST    | CORREO_DEL_ESTUDIANTE   | VARCHAR      | 100      |               | X        |                   |         |             | X            | Correo electrónico              |
 | TEL_EST       | TELEFONO_DEL_ESTUDIANTE | VARCHAR      | 20       |               | X        |                   |         |             | X            | Número de teléfono              |
 
+## Tabla CURSO: Almacena los cursos disponibles en la facultad
+
+| Campo       | Campo (completo)        | Tipo de dato | Longitud | Tipo de Clave | Not Null | Auto Incremental | Default | Clave Index | Clave Unique | Descripción                |
+|-------------|-------------------------|--------------|----------|---------------|----------|-------------------|---------|-------------|--------------|----------------------------|
+| ID_CURSO    | ID_DEL_CURSO            | INT          |          | Primaria      | X        | X                 |         | X           | X            | Identificador del curso    |
+| NOMBRE_CUR  | NOMBRE_DEL_CURSO        | VARCHAR      | 100      |               | X        |                   |         |             |              | Nombre del curso           |
+| DESCRIPCION | DESCRIPCION_DEL_CURSO   | VARCHAR      | 300      |               |          |                   |         |             |              | Descripción del curso      |
+| NIVEL       | NIVEL_DEL_CURSO         | VARCHAR      | 1        |               | X        |                   |         |             |              | Nivel del curso (F/I/D)    |
+| DURACION    | DURACION_DEL_CURSO      | INT          |          |               | X        |                   |         |             |              | Duración del curso (en horas) |
+
+## Tabla INSCRIPCION: Almacena todas las inscripciones en sus estados correspondientes
+
+| Campo          | Campo (completo)         | Tipo de dato | Longitud | Tipo de Clave | Not Null | Auto Incremental | Default | Clave Index | Clave Unique | Descripción                    |
+|----------------|--------------------------|--------------|----------|---------------|----------|-------------------|---------|-------------|--------------|--------------------------------|
+| ID_INSCRIPCION | ID_DE_LA_INSCRIPCION     | INT          |          | Primaria      | X        | X                 |         | X           | X            | Identificador de la inscripción |
+| ID_ESTUDIANTE  | ID_DEL_ESTUDIANTE        | INT          |          | Foránea       | X        |                   |         |             |              | Identificador del estudiante   |
+| ID_CURSO       | ID_DEL_CURSO             | INT          |          | Foránea       | X        |                   |         |             |              | Identificador del curso        |
+| FECHA_INS      | FECHA_DE_INSCRIPCION     | DATE         |          |               | X        |                   |         |             |              | Fecha de inscripción           |
+| ESTADO         | ESTADO_DE_LA_INSCRIPCION | VARCHAR      | 1        |               | X        |                   |         |             |              | Estado de la inscripción (P/C/R) |
+
+## Tabla NOTA: Almacena las notas obtenidas por los estudiantes en los distintos cursos
+
+| Campo          | Campo (completo)    | Tipo de dato | Longitud | Tipo de Clave | Not Null | Auto Incremental | Default | Clave Index | Clave Unique | Descripción                     |
+|----------------|---------------------|--------------|----------|---------------|----------|-------------------|---------|-------------|--------------|---------------------------------|
+| ID_NOTA        | ID_DE_LA_NOTA       | INT          |          | Primaria      | X        | X                 |         | X           | X            | Identificador de la nota        |
+| ID_ESTUDIANTE  | ID_DEL_ESTUDIANTE   | INT          |          | Foránea       | X        |                   |         |             |              | Identificador del estudiante    |
+| ID_CURSO       | ID_DEL_CURSO        | INT          |          | Foránea       | X        |                   |         |             |              | Identificador del curso         |
+| NOTA           | NOTA_DE_EXAMEN      | INT          |          |               | X        |                   |         |             |              | Nota obtenida                   |
+| FECHA_EV       | FECHA_DE_EVALUACION | DATE         |          |               | X        |                   |         |             |              | Fecha de evaluación             |
+
+## Tabla PROFESOR: Almacena la información de todos los profesores de la facultad
+
+| Campo          | Campo (completo)            | Tipo de dato | Longitud | Tipo de Clave | Not Null | Auto Incremental | Default | Clave Index | Clave Unique | Descripción                    |
+|----------------|-----------------------------|--------------|----------|---------------|----------|-------------------|---------|-------------|--------------|--------------------------------|
+| ID_PROF        | ID_DEL_PROFESOR             | INT          |          | Primaria      | X        | X                 |         | X           | X            | Identificador del profesor     |
+| NOMBRE_PROF    | NOMBRE_DEL_PROFESOR         | VARCHAR      | 100      |               | X        |                   |         |             |              | Nombre del profesor            |
+| ESPECIALIDAD   | ESPECIALIDAD_DEL_PROFESOR   | VARCHAR      | 100      |               | X        |                   |         |             |              | Especialidad del profesor      |
+| CORREO_PROF    | CORREO_DEL_PROFESOR         | VARCHAR      | 100      |               | X        |                   |         |             | X            | Correo electrónico             |
+| TEL_PROF       | TELEFONO_DEL_PROFESOR       | VARCHAR      | 20       |               | X        |                   |         |             | X            | Número de teléfono             |
+
+## Tabla ASIGN_PROF: Almacena las asignaciones de profesores a cursos de la facultad
+
+| Campo          | Campo (completo)           | Tipo de dato | Longitud | Tipo de Clave | Not Null | Auto Incremental | Default | Clave Index | Clave Unique | Descripción                      |
+|----------------|----------------------------|--------------|----------|---------------|----------|-------------------|---------|-------------|--------------|----------------------------------|
+| ID_ASIGNACION  | ID_DE_LA_ASIGNACION        | INT          |          | Primaria      | X        | X                 |         | X           | X            | Identificador de la asignación   |
+| ID_CURSO       | ID_DEL_CURSO_ASIGNADO      | INT          |          | Foránea       | X        |                   |         |             |              | Identificador del curso          |
+| ID_PROF        | ID_DEL_PROFESOR_ASIGNADO   | INT          |          | Foránea       | X        |                   |         |             |              | Identificador del profesor       |
+| HORARIO        | HORARIO_DE_LA_ASIGNACION   | INT          |          |               | X        |                   |         |             |              | Horario de la asignación         |
+| AULA_ASIGN     | AULA_ASIGNADA              | INT          |          |               | X        |                   |         |             |              | Aula asignada para la clase      |
+
 
 ## Estructura e ingesta de datos
 
