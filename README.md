@@ -123,10 +123,13 @@ El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN
 ## Estructura de datos
 
 - [Estructura principal](https://github.com/matfredes/Facultad_Fredes/blob/main/structure/database_structure.sql)
-
-## Roles y permisos
-
-## Back up de la base de datos
+- [Inserción de datos](https://github.com/matfredes/Facultad_Fredes/blob/main/structure/population.sql)
+- [Vistas](https://github.com/matfredes/Facultad_Fredes/blob/main/objects/views.sql)
+- [Funciones](https://github.com/matfredes/Facultad_Fredes/blob/main/objects/functions.sql)
+- [Stored Procedures](https://github.com/matfredes/Facultad_Fredes/blob/main/objects/store_procedures.sql)
+- [Triggers](https://github.com/matfredes/Facultad_Fredes/blob/main/objects/triggers.sql)
+- [Roles](https://github.com/matfredes/Facultad_Fredes/blob/main/objects/roles_users.sql)
+- [Backup](https://github.com/matfredes/Facultad_Fredes/blob/main/backups/backup_facultad.sql)
 
 ## Herramientas y tecnologias usadas
 
