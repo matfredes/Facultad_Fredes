@@ -1,4 +1,4 @@
-USE utn_proyecto ;
+USE utn_proyecto;
 
 -- DROPEO ROLES Y USUARIOS
 DROP ROLE IF EXISTS desarrollador_servicio;
@@ -10,7 +10,6 @@ DROP USER IF EXISTS 'reader_2'@'%';
 DROP USER IF EXISTS 'reader_3'@'%';
 DROP USER IF EXISTS 'dev'@'%';
 DROP USER IF EXISTS 'dev_jr'@'%';
-
 
 -- CREACIÓN NOMBRES ROLES
 CREATE ROLE desarrollador_servicio, desarrollador_asistente, directivos_facultad;
@@ -29,5 +28,5 @@ CREATE USER 'dev_jr'@'%' IDENTIFIED BY 'user5';
 
 -- ASIGNACION DE ROLES
 GRANT desarrollador_servicio TO 'dev'@'%';
-GRANT desarrollador_asistente TO 'reader1'@'%', 'reader2'@'%', 'reader3'@'%';
+GRANT desarrollador_asistente TO 'reader_1'@'%', 'reader_2'@'%', 'reader_3'@'%';
 GRANT directivos_facultad, desarrollador_asistente TO 'dev_jr'@'%';
