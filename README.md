@@ -122,7 +122,7 @@ El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN
 
 ## Estructura de datos
 
-- [Estructura principal] (https://github.com/matfredes/Facultad_Fredes/blob/main/structure/database_structure.sql)
+- [Estructura principal](https://github.com/matfredes/Facultad_Fredes/blob/main/structure/database_structure.sql)
 
 ## Roles y permisos
 
