@@ -16,9 +16,9 @@ DROP USER IF EXISTS 'dev_jr'@'%';
 CREATE ROLE desarrollador_servicio, desarrollador_asistente, directivos_facultad;
 
 -- ACCESOS DE ROLES
-GRANT ALL PRIVILEGES ON utn_proyecto.* TO desarrollador_feria;
-GRANT SELECT ON utn_proyecto.* TO gerencia_feria;
-GRANT INSERT, UPDATE, DELETE ON utn_proyecto.* TO desarrolladorjr_feria;
+GRANT ALL PRIVILEGES ON utn_proyecto.* TO desarrollador_servicio;
+GRANT SELECT ON utn_proyecto.* TO directivos_facultad;
+GRANT INSERT, UPDATE, DELETE ON utn_proyecto.* TO desarrollador_asistente;
 
 -- CREACION USUARIOS Y CONTRASEÑAS
 CREATE USER 'reader1'@'%' IDENTIFIED BY 'user1';
