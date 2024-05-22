@@ -56,6 +56,17 @@ El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN
 
 ## Listado de tablas y descripcion
 
+Tabla ESTUDIANTES: almacena la información de todos los alumnos de la facultad										
+Campo	Campo (completo)	Tipo de dato	Longitud	Tipo de Clave	Not Null	Auto Incremental	Default	Clave Index	Clave Unique	Descripción
+ID_ESTUDIANTE	ID_DEL_ESTUDIANTE	INT		Primaria	X	X		X	X	Identificador del estudiante
+NOMBRE_EST	NOMBRE_DEL_ESTUDIANTE	VARCHAR	100		X					Nombre del estudiante
+APELLIDO_EST	APELLIDO_DEL_ESTUDIANTE	VARCHAR	100		X					Apellido del estudiante
+FECHA_NAC	FECHA_DE_NACIMIENTO	DATE			X					Fecha de nacimiento
+GENERO	GENERO	VARCHAR	1							Género del estudiante (M/F)
+DIRECCION	DIRECCION_DEL_DOMICILIO	VARCHAR	100							Dirección del estudiante
+CORREO_EST	CORREO_DEL_ESTUDIANTE	VARCHAR	100		X				X	Correo electrónico
+TEL_EST	TELEFONO_DEL_ESTUDIANTE	VARCHAR	20		X				X	Número de teléfono
+
 ## Estructura e ingesta de datos
 
 ## Objetos de la base de datos
