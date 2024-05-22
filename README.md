@@ -4,13 +4,13 @@
 
 
 # <center>Entrega de proyecto final</center>
-@Alumno
+@Matias Fredes
 
-@Comision
+@53180-sql
 
-@Tutor
+@Carla Palermo Palermo @Santiago Angel Gonzalez Martin
 
-@Docente
+@Anderson Michel Torres
 
 
 
@@ -42,9 +42,17 @@
 
 ## Tematica del proyecto
 
+El proyecto consiste en el desarrollo de un Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN) que permita administrar y organizar de manera eficiente los datos de estudiantes, cursos, inscripciones, notas y profesores. Este sistema está diseñado para mejorar la gestión de información académica, facilitar la inscripción de estudiantes a cursos, y proporcionar herramientas analíticas para evaluar el rendimiento estudiantil y la carga académica. 
+
 ## Modelo de negocio
 
+El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN) se presenta como una solución que ofrece una propuesta de valor única al automatizar y optimizar la administración académica, permitiendo una gestión centralizada y segura de la información. De obtener resultados positivos, este sistema estará dirigido a universidades y centros educativos que buscan mejorar la eficiencia administrativa y ofrecer herramientas analíticas avanzadas.
+
 ## Diagrama entidad relacion (DER)
+
+<center>
+<img src="./images/DER.PNG" style="width: 100% ; aspect-ratio:16/9">
+</center>
 
 ## Listado de tablas y descripcion
 

@@ -28,5 +28,5 @@ CREATE USER 'dev_jr'@'%' IDENTIFIED BY 'user5';
 
 -- ASIGNACION DE ROLES
 GRANT desarrollador_servicio TO 'dev'@'%';
-GRANT desarrollador_asistente TO 'reader_1'@'%', 'reader_2'@'%', 'reader_3'@'%';
+GRANT directivos_facultad TO 'reader_1'@'%', 'reader_2'@'%', 'reader_3'@'%';
 GRANT directivos_facultad, desarrollador_asistente TO 'dev_jr'@'%';
