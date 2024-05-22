@@ -120,9 +120,9 @@ El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN
 | AULA_ASIGN     | AULA_ASIGNADA              | INT          |          |               | X        |                   |         |             |              | Aula asignada para la clase      |
 
 
-## Estructura e ingesta de datos
+## Estructura de datos
 
-## Objetos de la base de datos
+- [Estructura principal] (https://github.com/matfredes/Facultad_Fredes/blob/main/structure/database_structure.sql)
 
 ## Roles y permisos
 
