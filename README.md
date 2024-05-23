@@ -133,8 +133,14 @@ El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN
 
 ## Herramientas y tecnologias usadas
 
+**Plataforma CoderHouse**
+- Mediante el curso de SQL de CoderHouse, aprendimos los conceptos fundamentales para el desarrollo de una base de datos funcional
+
 **MySql**
 - Es el sistema de gestión de bases de datos utilizada para la creación y diseño de nuestro proyecto
+
+**GitHub**
+- Plataforma utilizada para la creación de repositorio que almacena la estructura de la base de datos y permite ejecutarla
 
 ## Como levantar el proyecto en CodeSpaces GitHub
 * env: Archivo con contraseñas y data secretas
