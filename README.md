@@ -133,6 +133,9 @@ El Sistema de Gestión Académica para la Universidad Tecnológica Nacional (UTN
 
 ## Herramientas y tecnologias usadas
 
+**MySql**
+Es el sistema de gestión de bases de datos utilizada para la creación y diseño de nuestro proyecto
+
 ## Como levantar el proyecto en CodeSpaces GitHub
 * env: Archivo con contraseñas y data secretas
 * Makefile: Abstracción de creacción del proyecto
