@@ -31,6 +31,7 @@ GRANT desarrollador_servicio TO 'dev'@'%';
 GRANT directivos_facultad TO 'reader_1'@'%', 'reader_2'@'%', 'reader_3'@'%';
 GRANT directivos_facultad, desarrollador_asistente TO 'dev_jr'@'%';
 
+
 SET DEFAULT ROLE desarrollador_servicio TO 'dev'@'%'; 
 SET DEFAULT ROLE directivos_facultad TO 'reader_1'@'%', 'reader_2'@'%', 'reader_3'@'%';
 SET DEFAULT ROLE directivos_facultad, desarrollador_asistente TO 'dev_jr'@'%';

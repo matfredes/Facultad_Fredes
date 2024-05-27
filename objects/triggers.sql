@@ -1,4 +1,5 @@
 USE utn_proyecto ;
+
 -- TRIGGERS 
 
 -- Trigger para verificar que el estudiante que quiera ingresar mediante un Procedimiento, no esté ya inscripto en el curso que le indico
